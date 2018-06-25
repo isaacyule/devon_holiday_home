@@ -1,1 +1,292 @@
 // Specific CSS for your home-page
+.page {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  background-color: rgba(0,0,0,0.05);
+}
+
+// ---------- WELCOME SECTION -----------
+
+#welcome-jumbo {
+  background-image: image-url("view2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+
+}
+
+.home-f {
+  display: none;
+  height: 40%;
+}
+
+.jumbotron-items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 5px #545454;
+}
+
+.jumbotron-item {
+  text-align: center;
+  margin-bottom: 0px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.book {
+  color: #F2F2F2;
+  border: 2px solid #F2F2F2;
+  padding: 10px 15px;
+  border-radius: 50px;
+  opacity: 0.6;
+}
+.book:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: #F2F2F2;
+}
+
+// --------- OVERVIEW SECTION ---------
+
+.overview {
+  width: 100%;
+  height: auto;
+  padding: 90px 25px;
+  background-color: #eff8ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .container {
+    height: 100%;
+  }
+}
+
+.overview-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overview-head {
+  display: block;
+  margin: auto;
+  padding: 40px 0px;
+
+  h2 {
+    margin: 0;
+    letter-spacing: 2px;
+  }
+}
+
+.overview-body {
+  width: 100%;
+}
+
+.overview-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 0px;
+  padding: 35px 0px;
+}
+
+.overview-list-item {
+  flex: 0 1 auto;
+  width: 200px;
+  height: 200px;
+  list-style: none;
+  text-align: center;
+
+  p {
+    display: block;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    max-width: 200px;
+  }
+
+  .icon-circle {
+    position: relative;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border: solid 2px black;
+    border-radius: 50%;
+
+    i {
+      width: 100%;
+      font-size: 50px;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      margin: -25px 0 0 -48px;
+    }
+  }
+}
+
+// --------- LOCATION SECTION ---------
+
+.location {
+  position: relative;
+  width: 100%;
+  height: 1100px;
+  min-height: 700px;
+  background-image: image-url('14.full.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  color: #e2dede;
+
+  .location-gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #485563, #29323c);
+    opacity: 0.9;
+
+  }
+
+  .location-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: perspective(1px) translateY(-50%) translateX(-50%);
+    width: 100%;
+    padding: 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+
+
+    .left-scene {
+      width: 50%;
+      height: 500px;
+
+      #map {
+        opacity: 1;
+      }
+    }
+
+    .right-scene {
+      width: 50%;
+      height: 500px;
+
+      .details-header {
+        display: block;
+        text-align: center;
+      }
+
+      .location-details {
+        list-style: none;
+
+        .location-detail {
+          padding: 5px 10px;
+          font-size: 20px;
+
+          .detail-head {
+          }
+
+          p {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+
+  .location {
+    height: 1100px;
+  }
+
+  .left-scene {
+    margin-top: 20px;
+    position: absolute;
+    right: 33%;
+    top: 25%;
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  .right-scene {
+    margin-bottom: 20px;
+    left: 19%;
+    bottom: 25%;
+    position: absolute;
+    flex-shrink: 0;
+    width: 100%;
+
+    .location-details {
+      min-width: 500px;
+
+    }
+
+  }
+}
+
+.gallery-section {
+  padding: 50px 20px;
+
+  .gallery-header {
+    margin: 20px 0px;
+    text-align: center;
+  }
+}
+
+.gallery {
+
+
+  .LibraryList {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    margin-bottom: 0px;
+
+    li {
+      p {
+        margin-bottom: 0px;
+      }
+
+      padding: 10px 10px;
+      list-style: none;
+
+      .selected {
+        color: red;
+      }
+    }
+  }
+
+  .photo {
+
+    img {
+      width: 300px;
+      height: auto;
+    }
+  }
+
+  .photo.selected {
+    p {
+      color: red;
+    }
+  }
+
+}
