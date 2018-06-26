@@ -16,6 +16,7 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
+gem "react-rails", "~> 2.4"
 
 group :development do
   gem 'web-console', '>= 3.3.0'
@@ -28,3 +29,5 @@ group :development, :test do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
+# Added at 2018-06-25 17:49:15 +0100 by isaacyule:

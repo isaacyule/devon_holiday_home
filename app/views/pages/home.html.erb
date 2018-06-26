@@ -113,12 +113,31 @@
     </div>
   </div>
 
+  <script>
+    function initMap() {
+    // The location of Uluru
+    const house = {lat: 50.284752, lng: -3.893811};
+    // The map, centered at Uluru
+    const map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 15, center: house});
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({position: house, map: map});
+  }
+  </script>
+
+
   <!-- GALLERY -->
   <div class="gallery-section">
     <div class="container">
       <h2 class="gallery-header">Gallery</h2>
+      <%= react_component("Gallery") %>
     </div>
   </div>
 </div>
 
+
 <%= javascript_pack_tag 'home' %>
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcpxeDI2i3-jVJe-m4jXhVNQ62h8lkiOI&callback=initMap"
+  async defer>
+</script>
