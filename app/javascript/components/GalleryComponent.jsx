@@ -22,7 +22,7 @@ class GalleryComponent extends Component {
 
     return (
       <div className="gallery-component">
-        <ImageGallery slideDuration={300} lazyLoad={true} thumbnailPosition="top" items={images} />
+        <ImageGallery showFullscreenButton={false} slideDuration={300} lazyLoad={true} thumbnailPosition="top" items={images} />
       </div>
     );
   }

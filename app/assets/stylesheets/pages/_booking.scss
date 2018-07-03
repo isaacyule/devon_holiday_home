@@ -1,0 +1,16 @@
+.calendar {
+  height: 900px;
+}
+
+select.form-control:not([size]):not([multiple]) {
+  height: 39px !important;
+
+}
+
+option {
+  font-size: 20px;
+}
+
+.form-control {
+  font-size: 2rem !important;
+}

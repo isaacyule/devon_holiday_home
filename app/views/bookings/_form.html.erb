@@ -1,0 +1,31 @@
+<%= simple_form_for(@booking) do |f| %>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <%= f.input :name, required: true %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <%= f.input :email, required: true %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <%= f.input :start, required: true, :order => [:day, :month, :year], :input_html => {:rows => 10} %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <%= f.input :end, required: true, :order => [:day, :month, :year], :input_html => {:rows => 10} %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <%= f.input :guests, required: true, collection: 1..20 %>
+    </div>
+    <div class="col-xs-12 col-sm-8">
+      <%= f.input :description, required: true %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 offset-md-3">
+      <%= f.button :submit %>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>You have recieved a booking request from <%= @email %></h1>
+
+    <p>
+      NUMBER OF GUESTS: <%= @guests %>.
+    </p>
+
+    <h4>A message from <%= @email %></h4>
+    <p><%= @description %></p>
+  </body>
+</html>
