@@ -16,6 +16,8 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem "react-rails", "~> 2.4"
+gem 'validates_email_format_of'
+
 
 group :development do
   gem 'web-console', '>= 3.3.0'
