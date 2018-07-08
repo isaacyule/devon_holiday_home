@@ -52,7 +52,7 @@ class Calendar extends React.Component {
   }
 
   selectSlot(slotInfo) {
-    console.log(`You have selected from ${slotInfo.start.toLocaleString()} until ${slotInfo.end.toLocaleString()}`);
+    // console.log(`You have selected from ${slotInfo.start.toLocaleString()} until ${slotInfo.end.toLocaleString()}`);
   }
 
   render () {

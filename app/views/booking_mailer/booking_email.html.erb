@@ -4,13 +4,13 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>You have recieved a booking request from <%= @email %></h1>
+    <h1>You have recieved a booking request from <%= @name %> (<%= @email %>).</h1>
 
-    <p>
-      NUMBER OF GUESTS: <%= @guests %>.
-    </p>
+    <h4>They have requested Seaview from <%= @start.strftime("%A, %B %e, %Y") %> until <%= @end.strftime("%A, %B %e, %Y") %> for <%= @guests %> guests.</h4>
 
-    <h4>A message from <%= @email %></h4>
+    <h4>A message from <%= @name %>:</h4>
     <p><%= @description %></p>
+
+    <p>------------DO NOT REPLY TO THIS EMAIL ------------</p>
   </body>
 </html>

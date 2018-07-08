@@ -3,8 +3,8 @@ class BookingMailer < ApplicationMailer
 
   def booking_email
     @guests = params[:guests]
-    @start = params[:start_date]
-    @end = params[:end_date]
+    @start = params[:start]
+    @end = params[:end]
     @email = params[:email]
     @description = params[:description]
     @name = params[:name]
