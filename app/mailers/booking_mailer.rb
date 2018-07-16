@@ -1,5 +1,5 @@
 class BookingMailer < ApplicationMailer
-  default from: 'isaac.k.yule@gmail.com'
+  default from: 'mikeyule@devonholidayhouse.com'
 
   def booking_email
     @guests = params[:guests]
@@ -8,7 +8,7 @@ class BookingMailer < ApplicationMailer
     @email = params[:email]
     @description = params[:description]
     @name = params[:name]
-    mail(to: 'isaac.k.yule@gmail.com', subject: 'THIS IS A TEST OF THE OLD EMAIL')
+    mail(to: 'mikeyule@devonholidayhouse.com', subject: 'THIS IS A TEST OF THE OLD EMAIL')
   end
 
 end
