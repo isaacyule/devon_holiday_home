@@ -17,6 +17,8 @@ gem 'uglifier'
 gem 'webpacker'
 gem "react-rails", "~> 2.4"
 gem 'validates_email_format_of'
+gem 'postmark-rails'
+
 
 
 group :development do
