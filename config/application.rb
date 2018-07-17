@@ -26,7 +26,7 @@ module DevonHolidayHome
 
 
     # Set xframe options
-    config.action_dispatch.default_headers = { 'X-Frame-Options' => 'ALLOWALL' }
+    config.action_dispatch.default_headers = { 'X-Frame-Options' => 'ALLOW-FROM www.devonholidayhouse.com' }
 
   end
 end
